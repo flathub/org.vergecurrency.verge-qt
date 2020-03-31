@@ -19,6 +19,10 @@ flatpak install flathub-beta org.vergecurrency.verge-qt
 
 For more information and more applications see https://flathub.org
 
+For more information about Verge Currency, please visit https://VergeCurrency.com
+
+For Verge Currency source code/software, please visit https://github.com/vergecurrency
+
 Contributing to Flathub
 -----------------------
 
