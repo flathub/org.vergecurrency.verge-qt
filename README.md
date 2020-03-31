@@ -1,4 +1,4 @@
-# Flathub
+# Verge Currency is on Flathub!
 
 Flathub is the central place for building and hosting Flatpak builds.
 
@@ -8,13 +8,13 @@ Using the Flathub repository
 To install applications that are hosted on Flathub, use the following:
 ```
 flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gnome.Recipes
+flatpak install flathub org.vergecurrency.verge-qt
 ```
 
 To install applications from the beta branch, use the following:
 ```
 flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
-flatpak install flathub-beta org.godotengine.Godot
+flatpak install flathub-beta org.vergecurrency.verge-qt
 ```
 
 For more information and more applications see https://flathub.org
