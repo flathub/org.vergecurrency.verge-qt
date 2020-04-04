@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/vergecurrency/org.vergecurrency.verge-qt/master/flathub.png" alt="Verge Flathub"></p>
+
 # Verge Currency is on Flathub!
 
 Flathub is the central place for building and hosting Flatpak builds.
