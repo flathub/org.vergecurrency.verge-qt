@@ -32,7 +32,7 @@
           "type": "archive",
           "only-arches": ["x86_64"],
           "url": "https://github.com/vergecurrency/verge/releases/download/v8.0.3/verge-ubuntu24.zip",
-          "sha256": "sha256:88d7619d75e5d6151f775bc772b6c2855d03db3ebf085aec9048bfdaed9518a2"
+          "sha256": "88d7619d75e5d6151f775bc772b6c2855d03db3ebf085aec9048bfdaed9518a2"
         }
       ]
     },
