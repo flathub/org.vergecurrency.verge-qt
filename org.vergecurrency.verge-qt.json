@@ -2,7 +2,7 @@
   "id": "org.vergecurrency.verge-qt",
   "runtime": "org.freedesktop.Platform",
   "sdk": "org.freedesktop.Sdk",
-  "runtime-version": "21.08",
+  "runtime-version": "25.08",
   "command": "verge-qt",
   "finish-args": [
     /* Xorg support */
@@ -21,18 +21,17 @@
       "name": "verge",
       "buildsystem": "simple",
       "build-commands": [
-        "install -m 0744 -D -t /app/bin/internal bin/verged",
-        "install -m 0744 -D -t /app/bin/internal bin/verge-qt",
-        "install -m 0744 -D -t /app/bin/internal bin/verge-cli",
-        "install -m 0744 -D -t /app/bin/internal bin/test_verge"
+        "install -m 0744 -D -t /app/bin/internal verged",
+        "install -m 0744 -D -t /app/bin/internal qt/verge-qt",
+        "install -m 0744 -D -t /app/bin/internal verge-cli",
+        "install -m 0744 -D -t /app/bin/internal verge-tx"
       ],
-      "post-install": ["/app/bin/internal/test_verge"],
       "sources": [
         {
           "type": "archive",
           "only-arches": ["x86_64"],
-          "url": "https://github.com/vergecurrency/verge/releases/download/v7.0.0/verge-7.0.0-x86_64-linux-gnu.tar.gz",
-          "sha256": "d88e80c712b8c8910980ac54d645ea78e8d35d8557ef6b8d64da1ddc0470c75c"
+          "url": "https://github.com/vergecurrency/verge/releases/download/v8.0.3/verge-ubuntu24.zip",
+          "sha256": "88d7619d75e5d6151f775bc772b6c2855d03db3ebf085aec9048bfdaed9518a2"
         }
       ]
     },
@@ -57,7 +56,7 @@
         {
           "type": "file",
           "url": "https://raw.githubusercontent.com/vergecurrency/verge/master/src/qt/res/src/verge.svg",
-		  "sha256": "20465236bb8ccde4a5fd38ac7134c0462198ae4cfecdcdbb723e911873e0c652"
+          "sha256": "20465236bb8ccde4a5fd38ac7134c0462198ae4cfecdcdbb723e911873e0c652"
         },
         {
           "type": "file",
