@@ -21,10 +21,10 @@
       "name": "verge",
       "buildsystem": "simple",
       "build-commands": [
-        "install -m 0744 -D -t /app/bin/internal bin/verged",
-        "install -m 0744 -D -t /app/bin/internal bin/verge-qt",
-        "install -m 0744 -D -t /app/bin/internal bin/verge-cli",
-        "install -m 0744 -D -t /app/bin/internal bin/test_verge"
+        "install -m 0744 -D -t /app/bin/internal verged",
+        "install -m 0744 -D -t /app/bin/internal qt/verge-qt",
+        "install -m 0744 -D -t /app/bin/internal verge-cli",
+        "install -m 0744 -D -t /app/bin/internal verge-tx"
       ],
       "post-install": ["/app/bin/internal/test_verge"],
       "sources": [
