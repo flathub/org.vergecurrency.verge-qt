@@ -19,6 +19,23 @@ flatpak remote-add flathub-beta https://flathub.org/beta-repo/flathub-beta.flatp
 flatpak install flathub-beta org.vergecurrency.verge-qt
 ```
 
+Usage
+-----
+
+Launch the Verge GUI:
+```
+flatpak run org.vergecurrency.verge-qt
+```
+
+Run the command-line tools:
+```
+flatpak run --command=verge-cli org.vergecurrency.verge-qt
+flatpak run --command=verged org.vergecurrency.verge-qt
+flatpak run --command=verge-tx org.vergecurrency.verge-qt
+```
+
+Verge data is stored inside the Flatpak application data directory.
+
 For more information and more applications see https://flathub.org
 
 For more information about Verge Currency, please visit https://VergeCurrency.com

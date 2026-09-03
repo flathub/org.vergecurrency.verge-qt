@@ -21,17 +21,24 @@
       "name": "verge",
       "buildsystem": "simple",
       "build-commands": [
-        "install -m 0744 -D -t /app/bin/internal verged",
-        "install -m 0744 -D -t /app/bin/internal qt/verge-qt",
-        "install -m 0744 -D -t /app/bin/internal verge-cli",
-        "install -m 0744 -D -t /app/bin/internal verge-tx"
+        "chmod +x *.AppImage",
+        "./Verge-Qt-x86_64.AppImage --appimage-extract",
+        "mv squashfs-root verge-qt.AppDir",
+        "./verged-x86_64.AppImage --appimage-extract",
+        "mv squashfs-root verged.AppDir",
+        "./verge-cli-x86_64.AppImage --appimage-extract",
+        "mv squashfs-root verge-cli.AppDir",
+        "./verge-tx-x86_64.AppImage --appimage-extract",
+        "mv squashfs-root verge-tx.AppDir",
+        "install -d /app/lib/verge",
+        "cp -a verge-qt.AppDir verged.AppDir verge-cli.AppDir verge-tx.AppDir /app/lib/verge/"
       ],
       "sources": [
         {
           "type": "archive",
           "only-arches": ["x86_64"],
-          "url": "https://github.com/vergecurrency/verge/releases/download/v8.0.3/verge-ubuntu24.zip",
-          "sha256": "88d7619d75e5d6151f775bc772b6c2855d03db3ebf085aec9048bfdaed9518a2"
+          "url": "https://github.com/vergecurrency/verge/releases/download/v26.8/verge-ubuntu24-appimages.zip",
+          "sha256": "41eac33ab81f99e6ab93977f4c93241f1ba2612c28006991599d65c12da2e9ee"
         }
       ]
     },
